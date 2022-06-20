@@ -22,7 +22,7 @@ const HandleUsers = () => {
         //case sensitive input handling
         if (receiver === _address) return console.log('attempted to add self');
         setLoading(true);
-        await fetch('/api/addFriend', {
+        await fetch('https://retralinkapi.herokuapp.com//api/addFriend', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ sender: _address, receiver: receiver })
@@ -53,7 +53,7 @@ const HandleUsers = () => {
         if (props === undefined) { return } else if (address === undefined) { return }; // Hook calls return undefined on first render
         setLoading(true);
         event.preventDefault();
-        await fetch('/api/setActive', {
+        await fetch('https://retralinkapi.herokuapp.com//api/setActive', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ sender: address, receiver: props })

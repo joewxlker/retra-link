@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './App';
-import Login from './DappComponents/LoginComponents/Login';
 import Messenger from './DappComponents/Messenger.jsx';
 import './index.css';
 

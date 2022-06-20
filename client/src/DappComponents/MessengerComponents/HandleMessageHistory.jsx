@@ -4,7 +4,6 @@ import '../Messenger.css'
 import useSetForm from '../../MessengerHooks/setUserData';
 import useSetUserAddress from '../../MessengerHooks/setAddress';
 import useSetActive from '../../MessengerHooks/setActive';
-import useAccountListener  from '../../MessengerHooks/accountsChanged';
 
 export const HandleMessageHistory = () => {
 
@@ -19,7 +18,7 @@ export const HandleMessageHistory = () => {
     useEffect(() => {
         if (address === undefined) { return };
         if (activeChat === undefined) { return };
-        fetch('/api/friendCode', {
+        fetch('https://retralinkapi.herokuapp.com//api/friendCode', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ sender: address, receiver: activeChat })
@@ -31,7 +30,7 @@ export const HandleMessageHistory = () => {
     useEffect(() => {
         if (friendCode === undefined) { return };
         // console.log('getting messages')
-        fetch('/api/getMessages', {
+        fetch('https://retralinkapi.herokuapp.com//api/getMessages', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ friendCode: friendCode })
@@ -86,7 +85,7 @@ export const HandleMessageHistory = () => {
         // attempting to send multiple transactions from the same address requires gas/nonce handling
         event.preventDefault();
         setLoading(true)
-        await fetch('/api/sendMessage', {
+        await fetch('https://retralinkapi.herokuapp.com//api/sendMessage', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ sender: address, receiver: activeChat, message: value.message })

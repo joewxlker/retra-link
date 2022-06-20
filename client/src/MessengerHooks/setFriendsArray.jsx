@@ -7,7 +7,7 @@ const useSetFriendsArray = () => {
     const address = useSetUserAddress();
 
     useEffect(() => {
-        fetch('/api/friendList', {
+        fetch('https://retralinkapi.herokuapp.com//api/friendList', {
                 method: 'post',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ sender: address })

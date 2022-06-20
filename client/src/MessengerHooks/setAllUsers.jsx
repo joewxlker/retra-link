@@ -7,7 +7,7 @@ const useAllUsers = () => {
 
     useEffect(() => {
         console.log('useAllUsers')
-            fetch('/api/allUsers', {
+            fetch('https://retralinkapi.herokuapp.com//api/allUsers', {
                 method: 'post',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ 'null': 'null' })

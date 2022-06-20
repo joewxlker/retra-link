@@ -3,8 +3,6 @@ import './Messenger.css'
 import LoginAuth from './LoginComponents/LoginAuth';
 import HandleUsers from './MessengerComponents/HandleUsers.jsx'
 import { HandleMessageHistory } from './MessengerComponents/HandleMessageHistory.jsx'
-import HandleMediaContent from './MessengerComponents/HandleMediaContent.jsx'
-import SideBar from './MessengerComponents/SideBar.jsx'
 import { useState } from 'react';
 
 const Messenger = () => {

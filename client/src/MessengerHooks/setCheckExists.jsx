@@ -8,7 +8,7 @@ const useCheckExists = () => {
 
 
     useEffect(() => {
-        fetch('/api/allUsers', {
+        fetch('https://retralinkapi.herokuapp.com//api/allUsers', {
             method: 'post',
             headers: { 'Data-Type': 'applications/json' },
             body: JSON.stringify({ null: null })

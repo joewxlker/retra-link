@@ -1,5 +1,4 @@
 import './Main.css'
-import Widget from './Widget.jsx'
 import HandleLogin from '../DappComponents/LoginComponents/HandleLogin';
 
 const Main = () => {
