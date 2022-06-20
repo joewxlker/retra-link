@@ -1,0 +1,155 @@
+html{
+    height: 100vh;
+}
+.Messenger-header{
+    height: 0px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 5;
+}
+
+.Messenger-main{
+    background-color: rgb(14, 25, 34);
+    width: 100%;
+    height: 100vh;
+}
+
+.Messenger-main-sidebar{
+    width: 3%;
+    height: inherit;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 4px;
+}
+
+.Messenger-main-loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Messenger-main-body{
+    display: flex;
+    flex-direction: row;
+    height: 95%;
+}
+
+.Messenger-users{
+    height: 100%;
+    width: 25%;
+    box-shadow: 0rem 0rem 0.2rem 0.2rem rgba(0, 0, 0, 0.432);
+    z-index: 3;
+}
+
+.Messenger-message-history{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    justify-content:space-between;
+    background-image: linear-gradient(rgb(37, 37, 37), rgb(12, 34, 36));
+}
+
+.Messenger-media-content{
+    height: 90%;
+    width: 5%;
+}
+
+.Messenger-Component-header{
+    height: 3rem;
+    width: 100%;
+    background-color: rgb(76, 99, 93);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0.5rem 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.432);
+    color: white;
+}
+
+.Messenger-message-history-body{
+    height: 97%;
+    overflow: scroll;
+}
+
+.Messenger-text-body{
+    margin: 3%;
+    background: white;
+}
+
+.Messenger-footer{
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 4;
+}
+
+.Messenger-add-user{
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    flex-direction :column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Messenger-Users-Container {
+    scroll-behavior: smooth;
+    overflow:scroll;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    
+}
+
+
+.Messenger-Added-USers{
+    height: 50px;
+    overflow: hidden;
+    width: 95%;
+}
+
+.btn-friends {
+    width: 96%;
+    height: 3rem;
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btn-friends:hover {
+    font-weight:bold;
+    width: 100%;
+    height: 3rem;
+    border: none;
+    background-color: rgb(17, 131, 87);
+    color: rgb(65, 59, 59);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.message-sent{
+    color: black;
+}
+
+.Messenger-main-container{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}

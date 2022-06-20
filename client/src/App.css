@@ -1,0 +1,109 @@
+.btn-main {
+    height: 2.2rem;
+    width: 7rem;
+    background-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: rgba(255, 255, 255, 0.952);
+    color: rgba(255, 255, 255, 0.945);
+    border-radius: 0.3rem;
+}
+
+.btn-main:hover{
+    background-color: black;
+    color: rgb(43, 163, 127);
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: rgb(43, 163, 127);
+    border-radius: 0.3rem;
+    box-shadow: 0rem 0rem 1rem 0.3rem rgba(5, 255, 180, 0.418);
+    animation: buttonHover 0.2s;
+    animation-iteration-count: 2;
+}
+
+@keyframes buttonHover {
+    to {
+        background-color: black;
+        color: rgb(43, 163, 127);
+        border-style: solid;
+        border-width: 0.2rem;
+        border-color: rgb(43, 163, 127);
+        border-radius: 0.3rem;
+        box-shadow: 0rem 0rem 1rem 0.3rem rgba(5, 255, 180, 0.418);
+        animation: buttonHover 0.1s ease-in-out linear;
+    }
+    from {
+        height: 2.2rem;
+        width: 7rem;
+        background-color: rgb(0, 0, 0);
+        border-style: solid;
+        border-width: 0.2rem;
+        border-color: rgba(255, 255, 255, 0.911);
+        color: rgba(255, 255, 255, 0.904);
+        border-radius: 0.3rem;
+    }
+}
+
+.p-link{
+    font-weight: 600;
+    cursor:pointer;
+    text-decoration: underline;
+}
+h1 {
+    font-size: 3rem;
+    font-family: Neon;
+    font-weight: 1000;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    -webkit-text-stroke-color: rgb(43, 163, 127);
+    -webkit-text-stroke-width: 0.1rem;
+    text-shadow: 0 0rem 3rem rgb(5, 255, 180, 0.3);
+    animation: textFlicker 0.4s;
+    animation-iteration-count: 2;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+    font-family: monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0rem 3rem rgb(5, 255, 180, 0.3);
+    animation-iteration-count: 2;
+}
+
+@keyframes textFlicker {
+    to {
+        font-family: Neon;
+        font-weight: 700;
+        text-align: center;
+        color:rgb(0, 0, 0);
+        -webkit-text-stroke-color: rgb(43, 163, 127);
+        -webkit-text-stroke-width: 0.1rem;
+        text-shadow: 0 0rem 3rem rgb(5, 255, 180, 0.3);
+    }
+    from {
+        font-weight: 700;
+        text-align: center;
+        -webkit-text-stroke-color: rgb(255, 255, 255);
+        -webkit-text-stroke-width: 0.1rem;
+    }
+}
+
+.app-container {
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(5, 5, 5); */
+    background: linear-gradient(0deg, rgba(236, 13, 144, 0.3), rgba(0, 0, 0, 0.993));
+    /* url(./Images/web3bkg.svg); */
+    background-size: cover;
+    background-position: center;
+}

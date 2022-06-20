@@ -1,0 +1,27 @@
+.widget-container{
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+    width: 70%;
+    border-radius: 1rem;
+    border-width: 0.2rem;
+    border-style:solid;
+    border-color: rgb(189, 189, 189);
+    /* box-shadow: 0rem 0rem 1rem 0.2rem rgb(135, 236, 223); */
+}
+
+.widget-container:hover {
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+    width: 70%;
+    border-radius: 1rem;
+    border-width: 0.2rem;
+    border-style:solid;
+    border-color: rgb(5, 255, 180);
+    box-shadow: 0rem 0rem 1rem 0.2rem rgb(135, 236, 223);
+}
