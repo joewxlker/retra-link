@@ -53,7 +53,7 @@ const HandleUsers = () => {
         if (props === undefined) { return } else if (address === undefined) { return }; // Hook calls return undefined on first render
         setLoading(true);
         event.preventDefault();
-        await fetch('https://retralinkapi.herokuapp.com//api/setActive', {
+        await fetch('https://retralinkapi.herokuapp.com/api/setActive', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ sender: address, receiver: props })
