@@ -22,7 +22,7 @@ const HandleUsers = () => {
         //case sensitive input handling
         if (receiver === _address) return console.log('attempted to add self');
         setLoading(true);
-        await fetch('https://retralinkapi.herokuapp.com//api/addFriend', {
+        await fetch('https://retralinkapi.herokuapp.com/api/addFriend', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ sender: _address, receiver: receiver })

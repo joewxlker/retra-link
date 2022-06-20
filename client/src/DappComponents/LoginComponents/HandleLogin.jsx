@@ -5,7 +5,6 @@ import useSetForm from '../../MessengerHooks/setUserData';
 import useSetUserAddress from '../../MessengerHooks/setAddress';
 import useUserInfo from '../../MessengerHooks/setUserInfo';
 import useCheckExists from '../../MessengerHooks/setCheckExists';
-import useAccountListener from '../../MessengerHooks/accountsChanged';
 
 const HandleLogin = () => {
 
@@ -44,7 +43,7 @@ const HandleLogin = () => {
         setPending(true);
         console.log(address, value.username)
         if(address === undefined) return
-        await fetch('/api/createAccount', {
+        await fetch('https://retralinkapi.herokuapp.com/api/createAccount', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ sender: address, username: value.username })
