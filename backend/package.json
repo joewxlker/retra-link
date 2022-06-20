@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon messageServer.ts",
-    "watch": "tsc- w messageServer.ts",
+    "start": "nodemon messageServer.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
